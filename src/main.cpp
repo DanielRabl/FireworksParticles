@@ -274,11 +274,9 @@ struct main_state : qsf::base_state {
 		this->update(this->explosions);
 	}
 	void drawing() override {
-		//this->draw(this->background);
 		this->draw(this->rockets);
 		this->draw(this->explosions);
 	}
-	qsf::rectangle background;
 	std::vector<rocket> rockets;
 	std::vector<explosion> explosions;
 	qpl::cubic_generator spawn_gen;
